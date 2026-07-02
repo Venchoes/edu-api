@@ -22,6 +22,7 @@ app.listen(PORT, () => {
   console.log(`EduLearn User Service (vulnerável) rodando na porta ${PORT}`);
 });
 
+// Exemplo: cálculo simples via função segura
 app.get('/calc', (req, res) => {
   const expr = req.query.expr || '2+2';
   // Não use eval; suporte apenas números e +,-,*,/
